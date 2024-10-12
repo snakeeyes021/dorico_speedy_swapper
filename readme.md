@@ -20,10 +20,10 @@ Well fear not, friends! This project provides a Python script and a batch file t
 
 2. **Clone or Download the Repository**: Place the `command_swapper.py`, `run_command_swapper.bat`, and `config.txt` files in a directory of your choice. I put mine in `C:\Users\<USERNAME>\dev\dorico_command_swapper`, but you do whatever works for you!
 
-3. **Update `config.txt`**: Open `config.txt` in a text editor and specify your user folder name and Dorico version.
+3. **Update `config.txt`**: Open `config.txt` in a text editor and specify your user folder name and Dorico version. For example:
     ```plaintext
-    user_folder=<USERNAME>
-    dorico_version=<CURRENT_DORICO_VERSION>
+    user_folder=billybob
+    dorico_version=5
     ```
 
 4. **Optional: Create a Batch File Shortcut**: 
