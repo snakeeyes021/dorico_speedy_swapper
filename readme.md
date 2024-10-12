@@ -29,7 +29,7 @@ Well fear not, friends! This project provides a Python script and a batch file t
 4. **Optional: Create a Batch File Shortcut**: 
     - Right-click `run_command_swapper.bat` and select "Create shortcut".
     - Rename it something like "Speedy Swap"
-    - Move the shortcut to wherever you'd like. Your desktop works fine, but I prefer your Start Menu folder:
+    - Move the shortcut to wherever you'd like. Your desktop works fine, but I prefer the Start Menu folder. For that:
         - Press `Windows + R`, type `shell:start menu`, and press Enter.
         - Drag your shortcut into the "Programs" folder.
     - You now have an entry in your Start menu called "Speedy Swap" which you can search for by typing it into the Start Menu
