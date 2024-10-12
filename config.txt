@@ -1,0 +1,2 @@
+user_folder=<USERNAME>
+dorico_version=<CURRENT_DORICO_VERSION>
