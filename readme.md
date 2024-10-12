@@ -37,17 +37,19 @@ Well fear not, friends! This project provides a Python script and a batch file t
 
 ## Usage
 
-1. **Initial Run**: Before making any changes to your key commands and preferences, run the script once to ensure the backup files are created.
+1. **Initial Run**: Before making any changes to your key commands and preferences, run the script once to ensure the swapper and backup files are created.
     - Either run the Start Menu shortcut or double click `run_command_swapper.bat`.
 
 2. **Edit Commands and Preferences**: Customize your key commands and preferences in Dorico to create your desired Speedy mode configuration.
 
-3. **Switch Configurations**: From then on, whenever you need to switch from one config to the other, simply run the script and restart Dorico. It's that easy :-)
+3. **Second Run**: Run the script to switch back to your initial/primary config and create backups of the secondary config.
+
+4. **Switch Configurations**: From then on, whenever you need to switch from one config to the other, simply run the script and restart Dorico. It's that easy :-)
 
 ## Notes/caveats
 
 - You will of course have already noticed, but this is for Windows only. It should be pretty transferrable to Mac with just a few adjustments, but I don't have one to install Dorico on and figure out the paths and other necessary modifications and so forth, so that'd need to be a task for someone else, at least at the moment. Sorry, Apple homies! 
-- On first run, not only will the script create the swapper files, it will also store a long-term backup of the two files in the same directory where you run it from. That way if things just go way south, you'll always have a fallback and the option of a fresh start. **However**, I highly recommend also manually making a backup of your secondary commands/preferences after you've created them and switched back to your primary. I suppose I could've automated this. But I didn't. In my testing, I did run into a single situation where one of the preferences files got eaten (so both files became identical); it was maybe after Dorico crashed or something like that, not fully sure. Luckily for me there is only one different setting between the two, so it wasn't a huge deal to fix it, but it's easiest to just have all four files backed up for when you need them. 
+- The script creates backups of both your primary and secondary key command and preference files during the first two runs. That way if things just go way south, you'll always have a fallback and the option of a fresh start. While the script handles these automatically, it's always recommended to manually back things up yourself for added certainty. 
 - The recreation of Speedy is not perfect, which is unfortunate but to be expected. At the moment, if you set Dorico to let you enter rhythm dots, accidentals, and articulations after entering the note, which I do, **regardless of whether you have shadow note auditioning turned off** the previously entered note sounds **every time you move the shadow note**. You also can't use alt-up/down to edit the pitch of the just entered note; that's another big bummer there (though you can use alt-left/right to change the note value; silver lining I suppose). I understand why it's happening, but I contend this should be considered undesired behavior. I do intend to make a post in the Dorico forum about this, so, who knows, maybe this changes at some point.
 - Chord mode is also a little screwy under the same circumstances. At the moment, chord mode freezes the shadow note after you've entered a note. The only really good way to work around this is to use note names when working in chord mode (which... sort of defeats the purpose, lol). You can also work around it by moving the cursor over with the left or right arrow keys and then just moving back. Basically, if you want to enter notes before accidentals etc., then you'd better hope you don't have too many chords. 
 - Once you have things separated and so forth, any time you make changes to your key commands or preferences, it will only affect the configuration that you're currently using (meaning if your primary config is "stock" and your secondary config is geared towards Speedy, if you are currently working in your stock config, any preference changes will only affect said stock config, not your Speedy config. That is probably obvious, but it's worth saying once.
