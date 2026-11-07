@@ -1,5 +1,7 @@
 # The Dorico Speedy Swapper
 
+![Language](https://img.shields.io/badge/Language-Python-blue) ![Target](https://img.shields.io/badge/Target-Steinberg%20Dorico-blue) ![License](https://img.shields.io/badge/License-GPL%203.0-blue)
+
 So the new "move shadow note" command in Dorico is a bit of a game changer, and that, along with a few other key command and preference alterations, allows you to more or less recreate Finale's speedy entry nearly exactly (a few small caveats there; will discuss below). 
 
 The problem is that those "few other key command and preference alterations" don't play nicely when you want to go back to Dorico's standard duration-before-pitch mode. Specifically, setting the movement of the shadow note to 'up' and 'down' means up and down are then no longer available for cursor movement up and down. That's perfectly fine (and desired, obviously) in pitch-before-duration, but when you go back to duration-before-pitch, that's a pretty big bummer. 
